@@ -3,6 +3,7 @@ import { Person } from '../../types/Person';
 import { PersonLink } from '../PersonLink/PersonLink';
 import cn from 'classnames';
 import { useParams } from 'react-router-dom';
+import { TableHeaders } from '../../helpers/TableHeaders';
 
 type Props = {
   people: Person[];
@@ -19,12 +20,9 @@ export const PeopleTable: React.FC<Props> = props => {
     >
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Sex</th>
-          <th>Born</th>
-          <th>Died</th>
-          <th>Mother</th>
-          <th>Father</th>
+          {TableHeaders.map(header => (
+            <th key={header}>{header}</th>
+          ))}
         </tr>
       </thead>
 

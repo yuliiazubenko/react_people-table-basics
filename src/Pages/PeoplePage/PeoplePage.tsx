@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Loader } from '../Loader';
-import { PeopleTable } from '../PeopleTable/PeopleTable';
+import { Loader } from '../../components/Loader/Loader';
+import { PeopleTable } from '../../components/PeopleTable/PeopleTable';
 import { Person } from '../../types';
 import { getPeople } from '../../api';
 

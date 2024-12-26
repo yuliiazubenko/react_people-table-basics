@@ -6,7 +6,7 @@ const getLinkClass = ({ isActive }: { isActive: boolean }) =>
     'has-background-grey-lighter': isActive,
   });
 
-export const NavBar = () => {
+export const Navigation = () => {
   return (
     <nav
       data-cy="nav"
